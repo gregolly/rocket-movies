@@ -11,4 +11,8 @@ export const MainContainer = styled.main`
 
     padding: 1.5rem 7.69rem;
     margin-top: 3rem;
+
+    .btn-add-movie {
+        width: 220px;
+    }
 `

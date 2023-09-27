@@ -14,3 +14,10 @@ export const Container = styled.header`
         font-weight: 700;
     }
 `
+
+export const Search = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0 6.4rem;
+  flex-grow: 1;
+`;

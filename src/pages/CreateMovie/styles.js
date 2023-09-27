@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.form`
     padding: 40px 120px 85px;
 
     a {
@@ -27,6 +27,7 @@ export const Container = styled.div`
         width: 100%;
         border-radius: 10px;
         background: #262529;
+        color: #FFFFFF;
         height: 274px;
         padding: 19px 16px;
         border: none;

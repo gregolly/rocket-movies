@@ -1,24 +1,19 @@
 /* eslint-disable react/prop-types */
-import { FiStar } from 'react-icons/fi'
 import { Container, StarsWrapper, TagsWrapper } from "./styles"
 import { Tag } from '../Tag'
+import { Rating } from '../Rating'
 
-export function MovieNote({ title, content, tags, ...rest }) {
+export function MovieNote({ data, ...rest }) {
     return (
         <Container {...rest}>
-            <h3>{title}</h3>
+            <h3>{data.title}</h3>
             <StarsWrapper>
-                <span>
-                    <FiStar fill='#FF859B' />
-                    <FiStar fill='#FF859B' />
-                    <FiStar fill='#FF859B' />
-                    <FiStar fill='#FF859B' />
-                </span>
+                <Rating grade={data.rating} isBigSize={false} />
             </StarsWrapper>
-            <p>{content}</p>
+            <p>{data.description}</p>
             <TagsWrapper>
-                {tags && 
-                    tags.map(tag => (
+                {data.tags && 
+                    data.tags.map(tag => (
                         <Tag title={tag.name} key={tag.id} />
                     ))
                 }

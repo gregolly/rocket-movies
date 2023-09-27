@@ -10,6 +10,7 @@ export const Container = styled.div`
 
     margin-bottom: 8px;
     border-radius: 10px;
+    // margin: 0 2rem;
 
     > input {
         height: 56px;

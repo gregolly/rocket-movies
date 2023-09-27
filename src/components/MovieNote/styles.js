@@ -4,6 +4,8 @@ export const Container = styled.div`
     padding: 32px;
     border-radius: 16px;
     background: rgba(255, 133, 155, 0.05);
+    margin-bottom: 2rem;
+    cursor: pointer;
 
     > h3 {
         color: #F4EDE8;
